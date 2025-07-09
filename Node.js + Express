@@ -1,0 +1,20 @@
+// server.js (Node.js + Express)
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.json());
+
+// Endpoint para retornar pontos de coleta (exemplo fixo, idealmente buscar no banco de dados)
+app.post('/api/pontos-coleta', (req, res) => {
+  const endereco = req.body.endereco; // Aqui, você usaria uma API de geolocalização para transformar o endereço em coordenadas
+  
+  // Ponto de coleta fictício
+  const pontoColeta = { lat: -20.4697, lon: -54.6209 };
+  
+  res.json(pontoColeta);
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
