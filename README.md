@@ -38,4 +38,4 @@ npm start
 
 Este projeto é licenciado sob a licença MIT - consulte o arquivo LICENSE para mais detalhes.
 
-João Guilherme Zonfrilli - Desenvolvedor Principal - [SeuPerfilGitHub](https://github.com/gui60hz)
+João Guilherme Zonfrilli - Desenvolvedor Principal - [GitHub](https://github.com/gui60hz)
